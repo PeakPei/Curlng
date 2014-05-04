@@ -78,12 +78,12 @@ static NSString * const kMovableNodeName = @"movable"; // Keep track of what can
         self.sn_background.physicsBody.contactTestBitMask = PhysicsCategoryRock;
         self.sn_background.physicsBody.collisionBitMask = PhysicsCategoryRock;
         
-        self.sn_target.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.sn_target.size];
+        self.sn_target.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:10.0f];
         self.sn_target.physicsBody.categoryBitMask = PhysicsCategoryTarget;
         self.sn_target.physicsBody.contactTestBitMask = PhysicsCategoryBackground | PhysicsCategoryRock | PhysicsCategoryTarget;
         self.sn_target.physicsBody.collisionBitMask = PhysicsCategoryBackground;
         
-        self.sn_rock.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.sn_rock.size];
+        self.sn_rock.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:10.0f];
         self.sn_rock.physicsBody.mass = 18.0;
         self.sn_rock.physicsBody.friction = 0.1;
         self.sn_rock.physicsBody.linearDamping = 0.75;
