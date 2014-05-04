@@ -7,30 +7,48 @@
 //
 
 #import "CURViewController.h"
-#import "CURMyScene.h"
+#import "CURScene.h"
 
 @implementation CURViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Configure the view.
-    SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
     
-    // Create and configure the scene.
-    SKScene * scene = [CURMyScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    // Present the scene.
-    [skView presentScene:scene];
+    UIButton *b_reset = [UIButton buttonWithType:UIButtonTypeSystem];
+    b_reset.frame = CGRectMake(10.0f, self.view.frame.size.height - 30.0f, 100.0f, 15.0f);
+    [b_reset setTitle:@"Reset" forState:UIControlStateNormal];
+    [b_reset addTarget:self action:@selector(resetGame) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:b_reset];
 }
 
-- (BOOL)shouldAutorotate
-{
-    return YES;
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
+- (void)resetGame {
+    SKView * skView = (SKView *)self.view;
+    [(CURScene *)skView.scene resetRocksPositions];
+}
+
+- (void)viewWillLayoutSubviews {
+    
+    [super viewWillLayoutSubviews];
+    
+    // Configure the view.
+    SKView * skView = (SKView *)self.view;
+    
+    if (!skView.scene) {
+        skView.showsFPS = NO;
+        skView.showsNodeCount = NO;
+        
+        // Create and configure the scene.
+        SKScene * scene = [CURScene sceneWithSize:skView.bounds.size];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        
+        // Present the scene.
+        [skView presentScene:scene];
+    }
 }
 
 - (NSUInteger)supportedInterfaceOrientations

@@ -16,8 +16,7 @@
 		498ADDBD190C9828005C9B3E /* CURAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 498ADDBC190C9828005C9B3E /* CURAppDelegate.m */; };
 		498ADDC0190C9828005C9B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498ADDBE190C9828005C9B3E /* Main.storyboard */; };
 		498ADDC3190C9828005C9B3E /* CURViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498ADDC2190C9828005C9B3E /* CURViewController.m */; };
-		498ADDC6190C9828005C9B3E /* CURMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 498ADDC5190C9828005C9B3E /* CURMyScene.m */; };
-		498ADDC8190C9828005C9B3E /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 498ADDC7190C9828005C9B3E /* Spaceship.png */; };
+		498ADDC6190C9828005C9B3E /* CURScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 498ADDC5190C9828005C9B3E /* CURScene.m */; };
 		498ADDCA190C9828005C9B3E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498ADDC9190C9828005C9B3E /* Images.xcassets */; };
 		498ADDD1190C9828005C9B3E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498ADDD0190C9828005C9B3E /* XCTest.framework */; };
 		498ADDD2190C9828005C9B3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498ADDAA190C9828005C9B3E /* Foundation.framework */; };
@@ -51,15 +50,15 @@
 		498ADDBF190C9828005C9B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		498ADDC1190C9828005C9B3E /* CURViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CURViewController.h; sourceTree = "<group>"; };
 		498ADDC2190C9828005C9B3E /* CURViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CURViewController.m; sourceTree = "<group>"; };
-		498ADDC4190C9828005C9B3E /* CURMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CURMyScene.h; sourceTree = "<group>"; };
-		498ADDC5190C9828005C9B3E /* CURMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CURMyScene.m; sourceTree = "<group>"; };
-		498ADDC7190C9828005C9B3E /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		498ADDC4190C9828005C9B3E /* CURScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CURScene.h; sourceTree = "<group>"; };
+		498ADDC5190C9828005C9B3E /* CURScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CURScene.m; sourceTree = "<group>"; };
 		498ADDC9190C9828005C9B3E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		498ADDCF190C9828005C9B3E /* CurlngTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurlngTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		498ADDD0190C9828005C9B3E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		498ADDD8190C9828005C9B3E /* CurlngTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CurlngTests-Info.plist"; sourceTree = "<group>"; };
 		498ADDDA190C9828005C9B3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		498ADDDC190C9828005C9B3E /* CurlngTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurlngTests.m; sourceTree = "<group>"; };
+		498ADDE6190CABBB005C9B3E /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,11 +125,11 @@
 				498ADDBE190C9828005C9B3E /* Main.storyboard */,
 				498ADDC1190C9828005C9B3E /* CURViewController.h */,
 				498ADDC2190C9828005C9B3E /* CURViewController.m */,
-				498ADDC4190C9828005C9B3E /* CURMyScene.h */,
-				498ADDC5190C9828005C9B3E /* CURMyScene.m */,
-				498ADDC7190C9828005C9B3E /* Spaceship.png */,
+				498ADDC4190C9828005C9B3E /* CURScene.h */,
+				498ADDC5190C9828005C9B3E /* CURScene.m */,
 				498ADDC9190C9828005C9B3E /* Images.xcassets */,
 				498ADDB3190C9828005C9B3E /* Supporting Files */,
+				498ADDE6190CABBB005C9B3E /* Math.h */,
 			);
 			path = Curlng;
 			sourceTree = "<group>";
@@ -243,7 +242,6 @@
 			files = (
 				498ADDB7190C9828005C9B3E /* InfoPlist.strings in Resources */,
 				498ADDCA190C9828005C9B3E /* Images.xcassets in Resources */,
-				498ADDC8190C9828005C9B3E /* Spaceship.png in Resources */,
 				498ADDC0190C9828005C9B3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				498ADDB9190C9828005C9B3E /* main.m in Sources */,
-				498ADDC6190C9828005C9B3E /* CURMyScene.m in Sources */,
+				498ADDC6190C9828005C9B3E /* CURScene.m in Sources */,
 				498ADDBD190C9828005C9B3E /* CURAppDelegate.m in Sources */,
 				498ADDC3190C9828005C9B3E /* CURViewController.m in Sources */,
 			);
@@ -473,6 +471,7 @@
 				498ADDE2190C9828005C9B3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		498ADDE3190C9828005C9B3E /* Build configuration list for PBXNativeTarget "CurlngTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +480,7 @@
 				498ADDE5190C9828005C9B3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
